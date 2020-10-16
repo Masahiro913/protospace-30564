@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
     #@prototype = @comment.prototype
     #@comments = @prototype.comments
     #render "prototypes/index"
-    redirect_to root_path
+    redirect_to prototype_path(@comment.prototype)
   end
   private
   def comment_params
